@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- feathericons -->
+    <!-- <script src="../../d02/feather/node_modules/feather-icons/dist/feather.js"></script> -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="guide.css">
+
+    <!-- feathericons cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-neutral-800">
+    <div class="grid overflow-hidden grid-cols-12 auto-rows-auto gap-2 gap-y-2 w-auto">
+        <!-- side menu -->
+        <div class="box row-span-3 col-span-2 font-medium text-sm p-8 bg-neutral-900 text-white">
+            <div class="mb-4">
+                <p class="p-2 mb-1 rounded hover:bg-neutral-700"><i data-feather="home" class="menu-inline"></i>Home</p>
+                <p class="p-2 mb-1 rounded hover:bg-neutral-700"><i data-feather="search" class="menu-inline"></i>Search</p>
+                <p class="p-2 mb-1 rounded hover:bg-neutral-700"><i data-feather="grid" class="menu-inline"></i>Your Library</p>
+            </div>
+            <div class="mb-4">
+                <p class="p-2 mb-1 rounded hover:bg-neutral-700"><i data-feather="plus-square" class="menu-inline"></i>Create Playlist</p>
+                <p class="p-2 mb-1 rounded hover:bg-neutral-700"><i data-feather="heart" class="menu-inline"></i>Liked Songs</p>
+                <p class="p-2 mb-1 rounded hover:bg-neutral-700"><i data-feather="target" class="menu-inline"></i>Your Episodes</p>
+            </div>
+        </div>
+        <!-- navigation -->
+        <div class="box col-span-10 mt-8 mb-4 px-8">
+            <div class="flex space-x-2 text-white">
+                <div class="item w-auto h-auto">
+                    <button class="p-1 rounded-full bg-neutral-900 hover:bg-neutral-700"><i data-feather="chevron-left"></i></button>
+                    <button class="p-1 rounded-full bg-neutral-900 hover:bg-neutral-700"><i data-feather="chevron-right"></i></button>
+                </div>
+                <div class="item w-auto h-auto flex-auto font-medium text-sm">
+                    <div class="flex">
+                        <a class="p-2 mr-2 rounded hover:bg-neutral-700 active:bg-neutral-600 hover:cursor-default">Playlist</a>
+                        <a class="p-2 mr-2 rounded hover:bg-neutral-700 active:bg-neutral-600 hover:cursor-default">Podcasts</a>
+                        <a class="p-2 mr-2 rounded hover:bg-neutral-700 active:bg-neutral-600 hover:cursor-default">Artists</a>
+                        <a class="p-2 mr-2 rounded bg-neutral-600 hover:cursor-default">Albums</a>
+                    </div>
+                </div>
+                <div class="item w-auto h-auto">
+                    <button class="font-medium mt-1 p-1 px-2 rounded-full border border-white hover:bg-neutral-700 text-sm">
+                        <i data-feather="user" class="acct-button w-5"></i>han <i data-feather="chevron-down" class="acct-button mr-0 w-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="box col-start-3 col-span-10 text-white px-8">
+            <div class="flex flex-wrap justify-between space-x-2">
+                <div class="item w-auto h-auto">
+                    <p class="text-xl font-bold mt-1">Albums</p>
+                </div>
+                <div class="item w-auto h-auto flex">
+                    <button class="p-1 px-2 rounded-full mr-2 hover:bg-neutral-900"><i data-feather="search"></i></button>
+                    <select name="" id="" class="w-48 p-2 font-medium text-sm bg-transparent focus:outline-0 border rounded">
+                        <option value="" class="text-black">Recently Added</option>
+                        <option value="" class="text-black">Alphabetical</option>
+                        <option value="" class="text-black">Creator</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- library -->
+        <div class="box col-start-3 col-span-10 px-8 py-4">
+            <div class="flex flex-wrap w-auto">
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/KKRwtQhbETAzcG8t8bYiajYJ5DFRUFwX_Qx-h1uPxPk/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5MjY3/Mi0xNDQzODAzOTM1/LTE2NTQucG5n.jpeg" alt="">
+                    <p class="font-medium text-sm">The Art of Drowning</p>
+                    <p class="text-xs">AFI</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/awjEZPMNNhEU6w9YXnco89akOExPDFsqbY-VppcxRcQ/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2ODQ3/MS0xNTUyNzY3MzUy/LTg2MzQuanBlZw.jpeg" alt="">
+                    <p class="font-medium text-sm">Eveything You Want</p>
+                    <p class="text-xs">Vertical Horizon</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/0toCllyyd8dKxbZKu5dsoF6wlXTzNK2IDlANjQtBwzw/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5NTg0/NzktMTQ4OTIzNDQ1/Ny0yNzM3LmpwZWc.jpeg" alt="">
+                    <p class="font-medium text-sm">Seven Second Surgery</p>
+                    <p class="text-xs">Faber Drive</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://cdnimg.melon.co.kr/cm2/album/images/107/07/118/10707118_20211216115828_500.jpg?48c9df59c2e194910caf7ddf33a261f1/melon/resize/282/quality/80/optimize" alt="">
+                    <p class="font-medium text-sm">Bleach</p>
+                    <p class="text-xs">Glen Check</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Misadventures.jpg" alt="">
+                    <p class="font-medium text-sm">Misadventures</p>
+                    <p class="text-xs">Pierce the Veil</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/100/83/805/10083805_500.jpg?56213bc53e48ef0671379fbfffc7405d/melon/resize/282/quality/80/optimize" alt="">
+                    <p class="font-medium text-sm">Verse 2</p>
+                    <p class="text-xs">JJ Project</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://cdnimg.melon.co.kr/cm2/album/images/106/44/509/10644509_20210705165611_500.jpg?4ac7fcb6e65735d3bf472838eb882dd8/melon/resize/282/quality/80/optimize" alt="">
+                    <p class="font-medium text-sm">VOID.</p>
+                    <p class="text-xs">jeebanoff</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/BdZI1xXqisA9NDqT1QAutvzt9u93-hpqlObRUmXMm7c/rs:fit/g:sm/q:90/h:533/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MjUw/OTYtMTM0OTQzODcw/NC04ODIzLmpwZWc.jpeg" alt="">
+                    <p class="font-medium text-sm">The Hearts of Lonely People</p>
+                    <p class="text-xs">Isles & Glaciers</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/ZSOijJkNc8hmK81rQ1Jza50eKLms8yX-LEBcBnusgwE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjk1/NzgtMTU4NzcxNjg0/OC0zNDczLmpwZWc.jpeg" alt="">
+                    <p class="font-medium text-sm">Camino Palmero</p>
+                    <p class="text-xs">The Calling</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/qUrCUXOz2FYr8yffYqVuH-1tjZe0-IRYT4hLIrkuLO4/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3ODEx/NTktMTU0OTM1NzQ5/NC0yODk5LmpwZWc.jpeg" alt="">
+                    <p class="font-medium text-sm">Yourself or Someone Like You</p>
+                    <p class="text-xs">Matchbox Twenty</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/06/628/10906628_20220401104146_500.jpg?75ae7076461a73dc0d6a27c41c8e5dd3/melon/resize/282/quality/80/optimize" alt="">
+                    <p class="font-medium text-sm">AAA</p>
+                    <p class="text-xs">Lil Moshpit</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/IGxKcJK5tElqOoovPRYEFahRvzKaaDnrnggJDxZ-wN8/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODMy/MDAtMTUxMzcwNzUy/Ni0yMzI3LmpwZWc.jpeg" alt="">
+                    <p class="font-medium text-sm">21st Century Breakdown</p>
+                    <p class="text-xs">Green Day</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://cdnimg.melon.co.kr/cm2/album/images/106/87/283/10687283_20210820152321_500.jpg?003453a41a2247bcb956486501a6c3f9/melon/resize/282/quality/80/optimize" alt="">
+                    <p class="font-medium text-sm">SEESAWs</p>
+                    <p class="text-xs">s/s</p>
+                </div>
+                <div class="card hover:bg-neutral-700">
+                    <img src="https://i.discogs.com/z7dvu7qMsVSMnRGaTRsSx5PHaMzmqFAGyS4B_mYxyMU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0Mjg2/MjYtMTQ1OTA1MTAz/OC00NTMwLmpwZWc.jpeg" alt="">
+                    <p class="font-medium text-sm">Get Your Heart On!</p>
+                    <p class="text-xs">Simple Plan</p>
+                </div>
+            </div>
+        </div>
+        <div class="box col-start-3 col-span-11 text-white text-center text-sm">free space, tinatamad na ako magdebug pero pwede na yan</div>
+    </div>
+</body>
+<script>
+    feather.replace()
+</script>
+</html>
